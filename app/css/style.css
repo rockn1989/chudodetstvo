@@ -23,7 +23,151 @@
 
 /*______ Icomoon Fonts ______*/
 
+@font-face {
+  font-family: 'icomoon';
+  src: url('../fonts/icomoon/fonts/icomoon.eot?pd5voz');
+  src: url('../fonts/icomoon/fonts/icomoon.eot?pd5voz#iefix') format('embedded-opentype'), url('../fonts/icomoon/fonts/icomoon.ttf?pd5voz') format('truetype'), url('../fonts/icomoon/fonts/icomoon.woff?pd5voz') format('woff'), url('../fonts/icomoon/fonts/icomoon.svg?pd5voz#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-arrow-down:before {
+  content: "\e900";
+}
+
+.icon-nav-icon:before {
+  content: "\e901";
+  color: #4a4a4a;
+}
+
+.icon-youtube:before {
+  content: "\e902";
+  color: #fff;
+}
+
+.icon-vk:before {
+  content: "\e903";
+  color: #fff;
+}
+
+.icon-instagram:before {
+  content: "\e904";
+  color: #fff;
+}
+
+.icon-facebook:before {
+  content: "\e905";
+  color: #fff;
+}
+
+.icon-calendar:before {
+  content: "\e906";
+  color: #fff;
+}
+
+.icon-arrow-left:before {
+  content: "\e907";
+  color: #b3b3b3;
+}
+
+.icon-arrow-right:before {
+  content: "\e908";
+  color: #b3b3b3;
+}
+
+.icon-arrow-right-shot:before {
+  content: "\e909";
+  color: #fff;
+}
+
 /*______ Elements ______*/
+
+.soc-links {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.soc-links a {
+  margin-right: 8px;
+  display: inline-block;
+  vertical-align: top;
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  text-align: center;
+  background-color: #77b66e;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  font-size: 10px;
+  color: #ffffff;
+}
+
+.soc-links a:last-child {
+  margin-right: 0;
+}
+
+.soc-links a:hover {
+  text-decoration: none;
+}
+
+nav.nav {
+  padding: 10px 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -moz-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+nav.nav a {
+  color: #4a4a4a;
+  font-size: 14px;
+  font-family: 'Arial';
+  font-weight: 700;
+}
+
+.btn {
+  padding: 0 15px;
+  display: inline-block;
+  vertical-align: top;
+  height: 50px;
+  line-height: 48px;
+  color: #ffffff;
+  text-align: center;
+  background-color: #ff4607;
+  border: 1px solid #ff4607;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  font-family: 'Arial';
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.btn:hover {
+  color: #ff4607;
+  background-color: #ffffff;
+  text-decoration: none;
+}
 
 body,
 table {
@@ -78,6 +222,137 @@ footer {
 }
 
 /*______ PAGE HEADER ______*/
+
+.header__top {
+  margin-bottom: -15px;
+  padding-top: 20px;
+}
+
+.header__top a.logo {
+  display: block;
+  text-align: center;
+}
+
+.header__top a.logo img {
+  display: inline;
+}
+
+.header__bottom {
+  background-color: #78b66e;
+}
+
+.company-name {
+  margin-left: 30px;
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 12px;
+  color: #989898;
+  font-family: 'Arial';
+  font-weight: 400;
+}
+
+.contacts__top {
+  margin-bottom: 10px;
+  color: #989898;
+  font-size: 12px;
+  font-family: 'Arial';
+  font-weight: 400;
+}
+
+.contacts .tel {
+  margin-right: 20px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.contacts .tel a {
+  position: relative;
+  color: #000000;
+  font-size: 13px;
+  font-family: 'Arial';
+  font-weight: 700;
+}
+
+.contacts .tel a:first-child {
+  margin-right: 15px;
+}
+
+.contacts .btn {
+  height: 30px;
+  line-height: 28px;
+  vertical-align: middle;
+}
+
+.catalog-nav::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.catalog-nav-menu {
+  margin-right: 35px;
+  float: left;
+  margin-top: 15px;
+  display: block;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  background-color: #ffffff;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  font-size: 12px;
+}
+
+.catalog-nav-menu:hover {
+  text-decoration: none;
+}
+
+.catalog-nav-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -moz-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.catalog-nav-list li {
+  height: 60px;
+  line-height: 60px;
+}
+
+.catalog-nav-list li a {
+  position: relative;
+  padding-right: 20px;
+  color: #ffffff;
+  font-size: 14px;
+  font-family: 'Arial' !important;
+  font-weight: 700;
+}
+
+.catalog-nav-list li a:before {
+  position: absolute;
+  top: 4px;
+  right: 0;
+  font-family: 'icomoon' !important;
+  font-size: 6px;
+  background-color: #e6e6e6;
+  width: 10px;
+  height: 10px;
+  text-align: center;
+  line-height: 10px;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  color: #67bd2d;
+}
 
 /* PAGE CONTENT */
 

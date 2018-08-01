@@ -28,6 +28,7 @@
     "gulp-rename": "latest",
     "gulp-svgmin": "latest",
     "gulp-svgstore": "latest",
+    "npm": "^6.2.0",
     "run-sequence": "latest"
   },
   "devDependencies": {

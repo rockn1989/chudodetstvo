@@ -1,1 +1,57 @@
 /*______ Elements ______*/
+
+.soc-links {
+	display: inline-block;
+	vertical-align: top;
+	a {
+		margin-right: 8px;
+		display: inline-block;
+		vertical-align: top;
+		width: 20px;
+		height: 20px;
+		line-height: 20px;
+		text-align: center;
+		background-color: #77b66e;
+		border-radius: 50%;
+		font-size: 10px;
+		color: #ffffff;
+		&:last-child {
+			margin-right: 0;
+		}
+		&:hover {
+			text-decoration: none;
+		}
+	}
+}
+
+
+nav.nav {
+	padding: 10px 0;
+	display: flex;
+	justify-content: space-between;
+	a {
+		color: #4a4a4a;
+		font-size: 14px;
+		.font(700)
+	}
+}
+
+.btn {
+	padding: 0 15px;
+	display: inline-block;
+	vertical-align: top;
+	height: 50px;
+	line-height: 48px;
+	color: #ffffff;
+	text-align: center;
+	background-color: #ff4607;
+	border: 1px solid #ff4607;
+	border-radius: 4px;
+	.font(700);
+	cursor: pointer;
+	&:hover {
+		color: #ff4607;
+		background-color: #ffffff;
+		text-decoration: none;
+	}
+}

@@ -1,7 +1,70 @@
 {% block content %}
 <header class="header">
-	<div class="uk-container">
-		Hello Header. Какой-то интересный текст
+
+	<!-- begin header__top -->
+	<div class="header__top">
+			<div class="uk-container">
+				<div class="uk-grid">
+					<div class="uk-width-1-3">
+						<div class="soc-links">
+							<a href="" class="soc-link icon-vk"></a>
+							<a href="" class="soc-link icon-instagram"></a>
+							<a href="" class="soc-link icon-facebook"></a>
+							<a href="" class="soc-link icon-youtube"></a>
+						</div>
+						<div class="company-name">Детский центр развития и фитнеса</div>
+						<nav class="nav">
+							<a href="/about-us">О нас</a>
+							<a href="/price">Услуги и цены</a>
+							<a href="/reviews">Отзывы</a>
+							<a href="">Расписание</a>
+						</nav>
+					</div>
+					<div class="uk-width-1-4">
+						<a href="/" class="logo">
+							<img src="img/logo.png" alt="">
+						</a>
+					</div>	
+					<div class="uk-width-4-10">
+						<div class="contacts">
+							<div class="contacts__top">
+								 <span class="contacts__address">
+										г. Люберцы, Октябрский пр.1 
+								 </span>
+								 <span class="contacts__timework">
+										пн-пт: 9:00-20:00  сб-вс: 10:00-18:00
+								 </span>
+							</div>
+							<div class="contacts__bottom">
+								<div class="tel">
+									<a href="tel:+74957967479">8 (495) 796 74 79</a>
+									<a href="tel:+74957967479">8 (495) 796 74 79</a>
+								</div>
+								<a href="" class="btn">Заказать звонок</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
 	</div>
+	<!-- end header__top -->
+
+	<!-- begin header__bottom -->
+		<div class="header__bottom">
+			<div class="uk-container">
+				<div class="catalog-nav">
+					<a href="" class="catalog-nav-menu icon-nav-icon"></a>
+					<ul class="catalog-nav-list">
+						<li class="catalog-nav__item"><a href="#" class="icon-arrow-down">Для детей от 1-3 лет</a></li>
+						<li class="catalog-nav__item"><a href="#" class="icon-arrow-down">Для детей от 4-6 лет</a></li>
+						<li class="catalog-nav__item"><a href="#" class="icon-arrow-down">Для детей от 7-9 лет</a></li>
+						<li class="catalog-nav__item"><a href="#" class="icon-arrow-down">Мастер классы</a></li>
+						<li class="catalog-nav__item"><a href="#" class="icon-arrow-down">Курсы для взрослых</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	<!-- end header__bottom -->	
+
 </header>
 {% endblock %}

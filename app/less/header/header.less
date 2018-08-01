@@ -1,1 +1,112 @@
 /*______ PAGE HEADER ______*/
+
+.header {
+	&__top {
+		margin-bottom: -15px;
+		padding-top: 20px;
+		a.logo {
+			display: block;
+			text-align: center;
+			img {
+				display: inline;
+			}
+		}
+	}
+	&__bottom {
+		background-color: #78b66e;
+	}
+}
+
+.company-name {
+	margin-left: 30px;
+	display: inline-block;
+	vertical-align: middle;
+	font-size: 12px;
+	color: #989898;
+	.font(400);
+}
+
+.contacts {
+	&__top {
+		margin-bottom: 10px;
+		color: #989898;
+		font-size: 12px;
+		.font(400);
+	}
+	.tel {
+		margin-right: 20px;
+		display: inline-block;
+		vertical-align: middle;
+		a {
+			position: relative;
+			color: #000000;
+			font-size: 13px;
+			.font(700);
+			&:first-child {
+				margin-right: 15px;
+			}
+		}
+	}
+	.btn {
+		height: 30px;
+		line-height: 28px;
+		vertical-align: middle;
+	}
+}
+
+.catalog-nav {
+	.clearfix();
+}
+
+.catalog-nav-menu {
+	margin-right: 35px;
+	float: left;
+	margin-top: 15px;
+	display: block;
+	width: 30px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	background-color: #ffffff;
+	border-radius: 50%;
+	font-size: 12px;
+	&:hover {
+		text-decoration: none;
+	}
+}
+
+.catalog-nav-list {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	display: flex;
+	justify-content: space-between;
+	li {
+		height: 60px;
+		line-height: 60px;
+		a {
+			position: relative;
+			padding-right: 20px;
+			color: #ffffff;
+			font-size: 14px;
+			font-family: 'Arial' !important;
+			font-weight: 700;
+			&:before {
+				position: absolute;
+				top: 4px;
+				right: 0;
+				font-family: 'icomoon' !important;
+				font-size: 6px;
+				background-color: #e6e6e6;
+				width: 10px;
+				height: 10px;
+				text-align: center;
+				line-height: 10px;
+				border-radius: 50%;
+				color: #67bd2d;
+			}
+		}
+	}
+}
+
+
