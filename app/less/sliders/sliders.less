@@ -1,1 +1,54 @@
 /*______ SLIDERS ______*/
+
+
+.main-slider {
+	color: #ffffff;
+	&__title {
+		margin-bottom: 25px;
+		font-size: 48px;
+		line-height: 48px;
+		.font(700);
+		@media @desk-w {
+			max-width: 50%;
+		}
+	}
+	&__text {
+		margin-bottom: 50px;
+		line-height: 24px;
+		@media @desk-w {
+			max-width: 50%;
+		}
+	}
+	.slide {
+		padding: 45px 0;
+		height: 450px;
+		background-repeat: no-repeat;
+		background-position: center;
+		-webkit-background-size: cover;
+		background-size: cover;
+	}
+	.btn {
+		position: relative;
+		padding-left: 65px;
+		padding-right: 25px;
+		font-family: 'Arial' !important;
+		font-size: 12px;
+		font-weight: 700;
+		letter-spacing: 2px;
+		text-transform: uppercase;
+		&:before {
+			position: absolute;
+			top: 14px;
+			left: 30px;
+			font-family: 'icomoon' !important;
+			font-size: 18px;
+			font-weight: 400;
+			line-height: 1;
+		}
+		&:hover {
+			&:before {
+				color: inherit;
+			}
+		}
+	}
+}
