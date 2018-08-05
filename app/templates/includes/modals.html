@@ -1,3 +1,48 @@
 {% block content %}
+<div id="phones-modal" class="uk-modal default-modal">
+	<div class="uk-modal-dialog">
+		<div class="uk-modal-header">
+			<div class="title">Наши номера телефонов:</div>
+			<a class="uk-modal-close uk-close"></a>
+		</div>
+		<div class="uk-modal-body">
+			<div class="phones-wrapper">
+				<a href="tel:+74957967479">8 (495) 796 74 79</a>
+				<a href="tel:+74957967479">8 (495) 796 74 79</a>
+			</div>
+		</div>
+	</div>
+</div>
 
+<div id="callback-modal" class="uk-modal default-modal">
+	<div class="uk-modal-dialog">
+		<div class="uk-modal-header">
+			<div class="title">Заказать обратный звонок</div>
+			<a class="uk-modal-close uk-close"></a>
+		</div>
+		<div class="uk-modal-body">
+			<form action="" class="callback-form">
+				<fieldset>
+					<label for="callback-name">Ваше имя <sup>*</sup></label>
+					<input type="text" name="callback-name" id="callback-name" required>
+				</fieldset>
+				<fieldset>
+					<label for="callback-email">Ваш номер телефона <sup>*</sup></label>
+					<input type="text" id="callback-tel" name="callback-tel" class="js__input-phone" required>
+				</fieldset>
+
+				<fieldset>
+					<div class="required-fileds">
+						<sup>*</sup> — поля обязательные для заполнения
+					</div>
+				</fieldset>
+
+				<button type="submit" class="btn modal-btn">Отправить</button>
+				<div class="form-politics">
+					Нажимая на кнопку отправить, я даю согласие на обработку <a href="">Персональных данных</a>
+				</div>
+			</form>
+		</div>
+	</div>
+</div>
 {% endblock %}

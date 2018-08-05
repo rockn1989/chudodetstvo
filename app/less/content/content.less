@@ -1,1 +1,293 @@
 /* PAGE CONTENT */
+
+p {
+	line-height: 30px;
+	margin-bottom: 30px;
+}
+
+.about-company {
+	position: relative;
+	margin-bottom: 90px;
+	padding-top: 55px;
+	&__text {
+		margin: 0 auto 70px;
+		color: #666666;
+		line-height: 30px;
+		@media @mob-w {
+			max-width: 100%;
+		}
+		@media @tablet-w {
+			max-width: 70%;
+		}
+	}
+	.uk-container {
+		position: relative;
+		&:before {
+			content: '';
+			position: absolute;
+			top: 15px;
+			left: -10px;
+			width: 205px;
+			height: 150px;
+			display: block;
+			background: url('../img/airway.png') 0 0 no-repeat;
+			-webkit-background-size: contain;
+			background-size: contain;
+			@media @mob-w {
+				display: none;
+			}
+			@media @desk-w {
+				display: block;
+			}
+		}
+		&:after {
+			content: '';
+			position: absolute;
+			top: 45px;
+			right: 15px;
+			width: 190px;
+			height: 75px;
+			display: block;
+			background: url('../img/airoplane.png') 0 0 no-repeat;
+			-webkit-background-size: contain;
+			background-size: contain;
+			@media @mob-w {
+				display: none;
+			}
+			@media @desk-w {
+				display: block;
+			}
+		}
+	}
+}
+
+
+.company-target {
+	padding: 40px 0;
+	color: #ffffff;
+	background-repeat: no-repeat;
+	background-position: center;
+	-webkit-background-size: cover;
+	background-size: contain;
+	@media @mob-w {
+		margin-bottom: 90px;
+		background-image: none;
+		background-color: #78b66e;
+	}
+	@media @desk-w {
+		margin-bottom: 55px;
+		background-image: url('../img/company-target.png');
+		background-color: transparent;
+	}
+	&__text {
+		@media @mob-w {
+			margin-left: 0;
+			max-width: none;
+		}
+		@media @desk-w {
+			margin-left: 34%;
+			max-width: 57%;
+		}
+		p {
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+	}
+}
+
+/* NEWS */
+
+.main-page-news {
+	margin: 0 auto 160px;
+	@media @mob-w {
+		margin-bottom: 100px;
+	}
+}
+
+.news-sections {
+	.news {
+		position: relative;
+		margin-bottom: 30px;
+		border-radius: 6px;
+		background-repeat: no-repeat;
+		background-position: 0 0;
+		-webkit-background-size: cover;
+		background-size: cover;
+		&:last-child {
+			margin-bottom: 0;
+		}
+		a {
+			padding: 25px 30px;
+			display: block;
+			width: 100%;
+			height: 100%;
+			color: #ffffff;
+			text-decoration: none;
+			&:hover {
+				text-decoration: none;
+			}
+		}
+		&__title {
+			margin-bottom: 25px;
+			font-size: 24px;
+			.font(700);
+			line-height: 30px;
+		}
+		.note__type {
+			margin-right: 15px;
+		}
+		&.shadow {
+			box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+		}
+		&--big {
+			text-align: center;
+			@media @mob-w {
+				margin-bottom: 30px !important;
+				height: auto;
+			}
+			@media @tablet-w {
+				height: 100%;
+				margin-bottom: 0 !important;
+			}
+			a {
+				position: relative;
+				padding: 60px 25%;
+				@media @mob-w {
+					padding: 60px 5%;
+				}
+				@media @desk-w {
+					padding: 60px 25%;
+				}
+			}
+			.notes {
+				text-align: center;
+				.note__type {
+					margin: 0 0 60px 0;
+				}
+				.note__date {
+					margin-bottom: 35px;
+					display: block;
+				}
+			}
+			.news__subtitle {
+				margin-top: 35px;
+				font-size: 14px;
+				line-height: 18px;
+				.font(400);	
+			}
+			.share {
+				top: 30px;
+				right: 30px;
+			}
+		}
+	}
+}
+
+.notes {
+	font-size: 0;
+	.note__type {
+		padding: 0 10px;
+		display: inline-block;
+		vertical-align: top;
+		font-size: 9px;
+		.font(700);
+		letter-spacing: 1px;
+		background-color: #f44336;
+		border-radius: 4px;
+		text-transform: uppercase;
+	}
+	.note__date {
+		display: inline-block;
+		vertical-align: top;
+		.font(400);
+		font-size: 12px;
+		line-height: 20px;
+	}
+}
+
+.share {
+	position: absolute;
+	width: 36px;
+	height: 36px;
+	background-color: rgba(0, 0, 0, .1);
+	text-align: center;
+	line-height: 36px;
+	z-index: 250;
+	border-radius: 50%;
+	font-size: 14px;
+	cursor: pointer;
+	transition: background-color .3s ease;
+	&:hover {
+		text-decoration: none;
+		background-color: rgba(0, 0, 0, 1);
+	}
+}
+
+
+.offers-block {
+	padding-top: 45px;
+	background-repeat: no-repeat;
+	background-position: center;
+	color: #ffffff;
+	min-height: 675px;
+	@media @mob-w {
+		padding-bottom: 45px;
+		background-image: none;
+		background-color: #78b66e;
+		background-repeat: repeat;
+		min-height: auto;
+	}
+	@media @desk-w {
+		padding-bottom: 0;
+		min-height: 675px;
+		background-color: transparent;
+		background-repeat: no-repeat;
+		background-image: url('../img/offers-bg.png');
+	}
+	.offers-title {
+		.font(700);
+		@media @mob-w {
+			margin-bottom: 30px;
+			font-size: 24px;
+			line-height: 30px;
+		}
+		@media @desk-w {
+			margin-bottom: 50px;
+			font-size: 36px;
+			line-height: 40px;
+		}
+	}
+	.offers-list {
+		padding-left: 15px;
+		font-size: 14px;
+		line-height: 18px;
+		li {
+			margin-bottom: 15px;
+		}
+		@media @mob-w {
+			max-width: 100%;
+		}
+		@media @desk-w {
+			max-width: 60%;
+		}
+	}
+}
+
+.soc-blocks {
+	margin-top: 75px;
+	@media @mob-w {
+		margin-bottom: 100px;
+	}
+	@media @tablet-w {
+		margin-bottom: 140px;
+	}
+	.soc-block {
+		@media @mob-w {
+			margin-bottom: 40px;
+		}
+		@media @tablet-w {
+			margin-bottom: 0;
+		}
+	}
+}

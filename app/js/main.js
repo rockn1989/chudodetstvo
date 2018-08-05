@@ -2,11 +2,59 @@
 
 $(function() {
 
+	/*______ Слайдер на главной ______*/
+
+	$('.main-slider .slider').slick({
+		slidesToShow: 1,
+		fade: true,
+		autoplay: true,
+		autoplayspeed: 500,
+		arrows: false
+	});
+
+
+	$('.about-company-slider .slider').slick({
+		slidesToShow: 3,
+		slidesToScroll: 1,
+		fade: false,
+		autoplay: true,
+		autoplayspeed: 500,
+		arrows: true,
+		prevArrow: '<div class="btn-slide slick-prev"><i class="icon-arrow-left"></i></div>',
+		nextArrow: '<div class="btn-slide slick-next"><i class="icon-arrow-right"></i></div>',
+		responsive: [
+			{
+				breakpoint: 1025,
+				settings: {
+					slidesToShow: 3,
+					slidesToScroll: 1,
+					infinite: true,
+				}
+			},
+			{
+				breakpoint: 940,
+				settings: {
+					slidesToShow: 2,
+					slidesToScroll: 1
+				}
+			},
+			{
+				breakpoint: 600,
+				settings: {
+					slidesToShow: 1,
+					slidesToScroll: 1
+				}
+			}
+		]
+	});
+
+
+
 	/*______ Показывать выпадающее меню в верхней навигации ______*/
 
 	$('.catalog-nav-menu').on('click', function (e) {
 		e.preventDefault()
-	})
+	});
 
 
 	/*______ Показывать форму на мобильных устройствах ______*/
@@ -30,17 +78,12 @@ $(function() {
 
 	/*______ Валидация формы ______*/
 
-	if($('form').is('.default-form')) {
+	if($('form').is('.callback-form')) {
 
-		$('.default-form').validate({
-			rules: {
-				email: {
-					required: true,
-					email: true
-				}
-			},
+		$('.callback-form').validate({
 			messages: {
-				email: "Обязательноe поле",
+				["callback-name"]: "Обязательноe поле",
+				["callback-tel"]: "Обязательноe поле"
 			},
 		});
 	};
@@ -48,20 +91,18 @@ $(function() {
 
 	/*______ Открытие мобильного подменю ______*/
 
-	$('.js__menu-sublist-toggle').on('click', function (e) {
+	$('.mobile-catalog-services').on('click','i', function (e) {
 		e.preventDefault();
 		var self = $(this),
 			blockParent = self.parent('a'),
-			siblingsList = blockParent.siblings('.menu-sublist');
+			siblingsList = blockParent.siblings('ul');
 
 		if(blockParent.hasClass('open')) {
-			siblingsList.stop().slideUp('350', function () {
-				blockParent.removeClass('open');
-			});
+			siblingsList.stop().slideUp('350');
+			blockParent.removeClass('open');
 		} else {
-			siblingsList.stop().slideDown('350', function () {
-				blockParent.addClass('open');
-			});
+			siblingsList.stop().slideDown('350');
+			blockParent.addClass('open');
 		}
 
 		self.toggleClass('open');
@@ -99,4 +140,25 @@ $(function() {
 
 	//svg4everebody();
 
+
+	/*______ Google Map ______*/
+
+	function initMap() {
+        var myLatLng = {lat: -25.363, lng: 131.044};
+
+        // Create a map object and specify the DOM element
+        // for display.
+        var map = new google.maps.Map(document.getElementById('map'), {
+          center: myLatLng,
+          zoom: 4
+        });
+
+        // Create a marker and set its position.
+        var marker = new google.maps.Marker({
+          map: map,
+          position: myLatLng,
+          title: 'Hello World!'
+        });
+      };
+  //initMap();
 });

@@ -5,11 +5,15 @@
 	color: #ffffff;
 	&__title {
 		margin-bottom: 25px;
-		font-size: 48px;
-		line-height: 48px;
 		.font(700);
+		@media @mob-w {
+			font-size: 24px;
+			line-height: 30px;
+		}
 		@media @desk-w {
 			max-width: 50%;
+			font-size: 48px;
+			line-height: 48px;
 		}
 	}
 	&__text {
@@ -21,7 +25,7 @@
 	}
 	.slide {
 		padding: 45px 0;
-		height: 450px;
+		min-height: 450px;
 		background-repeat: no-repeat;
 		background-position: center;
 		-webkit-background-size: cover;
@@ -29,26 +33,93 @@
 	}
 	.btn {
 		position: relative;
-		padding-left: 65px;
 		padding-right: 25px;
 		font-family: 'Arial' !important;
 		font-size: 12px;
 		font-weight: 700;
 		letter-spacing: 2px;
 		text-transform: uppercase;
+		@media @mob-w {
+			padding-left: 45px;
+		}
+		@media @tablet-w {
+			padding-left: 65px;
+		}
 		&:before {
 			position: absolute;
 			top: 14px;
-			left: 30px;
 			font-family: 'icomoon' !important;
 			font-size: 18px;
 			font-weight: 400;
 			line-height: 1;
+			@media @mob-w {
+				left: 15px;
+			}
+			@media @tablet-w {
+				left: 30px;
+			}
 		}
 		&:hover {
 			&:before {
 				color: inherit;
 			}
+		}
+	}
+}
+
+.about-company-slider {
+	.slick-list {
+		margin: 0 -15px;
+	}
+	.slide {
+		margin: 0 15px;
+		text-align: center;
+		img {
+			display: inline;
+		}
+	}
+	.slick-prev,
+	.slick-next {
+		z-index: 999;
+		width: auto;
+		height: auto;
+		&:before {
+			content: '';
+			font-family: none;
+			font-size: 0;
+			opacity: 1;
+		}
+		i {
+			display: block;
+			width: 60px;
+			height: 60px;
+			border-radius: 50%;
+			text-align: center;
+			line-height: 54px;
+			font-size: 21px;
+			background-color: #ffffff;
+			border: 2px solid #f5f5f5;
+			&:before {
+
+			}
+		}
+	}
+	.slick-prev {
+		left: -30px;
+		@media @mob-w {
+			left: 0;
+		}
+		@media @desk-w {
+			left: -30px;
+		}
+	}
+	.slick-next {
+		right: -30px;
+		@media @mob-w {
+			right: 0;
+		}
+		@media @desk-w {
+			right: -30px;
 		}
 	}
 }

@@ -1,1 +1,149 @@
 /*______ PAGE FOOTER ______*/
+
+.footer-form {
+	padding-bottom: 240px;
+	background-color: #307636;
+	.uk-container {
+		position: relative;
+		&:before {
+			content: '';
+			position: absolute;
+			top: -30px;
+			left: 0;
+			display: block;
+			width: 190px;
+			height: 75px;
+			background: url('../img/airoplane.png') 0 0 no-repeat;
+		}
+	}
+	.form-title {
+		margin-bottom: 40px;
+		padding-top: 65px;
+		color: #ffffff;
+		font-size: 18px;
+		line-height: 30px;
+		.font(700);
+		text-align: center;
+		text-transform: uppercase;
+	}
+	form {
+		@media @mob-w {
+			display: block;
+		}
+		@media @tablet-w {
+			display: flex;
+			justify-content: center;
+		}
+		input[type="text"] {
+			margin-right: 30px;
+			padding: 0 18px;
+			min-width: 260px;
+			height: 50px;
+			line-height: 50px;
+			border-radius: 4px;
+			border: 2px solid #f0f0f0;
+			background-color: #ffffff;
+			@media @mob-w {
+				display: block;
+				margin-bottom: 15px;
+			}
+			@media @tablet-w {
+				display: inline-block;
+			}
+		}
+		.btn {
+			font-size: 12px;
+			.font(400);
+			text-transform: uppercase;
+			letter-spacing: 2px;
+		}
+	}
+}
+
+.footer-contacts {
+	margin-top: -140px;
+	border-radius: 6px;
+}
+
+.address {
+	margin: 0 auto 60px;
+	padding: 65px 11%;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.16);
+	@media @mob-w {
+		padding-top: 25px;
+	}
+	@media @tablet-w {
+		padding-top: 65px;
+	}
+	&__title {
+		margin-bottom: 25px;
+		color: #666666;
+		font-weight: 700;
+		line-height: 30px;
+		@media @mob-w {
+			margin-top: 40px;
+		}
+		@media @tablet-w {
+			margin-top: 0;
+		}
+	}
+	&__val {
+		margin-bottom: 8px;
+		color: #808080;
+		font-size: 14px;
+		line-height: 30px;
+		.font(400);
+		a {
+			color: inherit;
+		}
+	}
+}
+
+.map {
+	height: 240px;
+}
+
+.footer-nav {
+	ul {
+		margin: 0;
+		padding: 0;
+		list-style-type: none;
+		text-align: center;
+		li {
+			margin-right: 40px;
+			display: inline-block;
+			&:last-child {
+				margin-right: 0;
+			}
+			a {
+				color: #4a4a4a;
+				font-size: 14px;
+				.font(700)
+			}
+			@media @mob-w {
+				margin-bottom: 10px;
+				display: block;
+				text-align: left;
+			}
+			@media @tablet-w {
+				display: inline-block;
+			}
+		}
+	}
+	.company-name {
+		margin: 35px auto;
+		display: block;
+		text-align: center;
+	}
+	.soc-links {
+		margin-top: 30px;
+		display: block;
+		text-align: center;
+		a {
+			width: 35px;
+			height: 35px;
+			line-height: 35px;
+			font-size: 18px;
+		}
+	}
+}
