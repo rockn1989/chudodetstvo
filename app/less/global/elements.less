@@ -118,3 +118,31 @@ nav.nav {
 		transform: translateX(-50%);
 	}
 }
+
+/*______ Breadcrumbs ______*/
+
+.breadcrumbs {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	li {
+		display: inline-block;
+		vertical-align: top;
+		color: #ffffff;
+		font-size: 16px;
+		font-weight: 400;
+	}
+	a {
+		position: relative;
+		padding-right: 10px;
+		color: #ffffff;
+		&:after {
+			content: '-';
+			position: absolute;
+			top: 50%;
+			right: 0;
+			line-height: 1px;
+			font-size: 16px;
+		}
+	}
+}
