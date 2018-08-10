@@ -1,8 +1,105 @@
 /* PAGE CONTENT */
 
+.title-h1 {
+	margin-bottom: 25px;
+	color: #78b66e;
+	.font(700);
+	@media @mob-w {
+		font-size: 30px;
+		line-height: 30px;
+	}
+	@media @desk-w {
+		font-size: 48px;
+		line-height: 48px;
+	}
+}
+
+.title-h2 {
+	margin-bottom: 25px;
+	color: #666666;
+
+	.font(700);
+	@media @mob-w {
+		font-size: 24px;
+		line-height: 30px;
+	}
+	@media @tablet-w {
+		font-size: 30px;
+		line-height: 1;
+	}
+}
+
+.small-title {
+	color: #666666;
+	.font(700);
+	@media @mob-w {
+		margin-bottom: 25px !important;
+		font-size: 18px;
+		line-height: 24px;
+	}
+	@media @desk-w {
+		font-size: 18px;
+		line-height: 40px;
+	}
+}
+
+.content-img.img-right {
+	float: right;
+}
+
+.content-img.img-left {
+	float: left;
+}
+
+
+.content-list {
+	padding-left: 20px;
+	color: #666666;
+	list-style-type: none;
+	li {
+		margin-bottom: 40px;
+		padding-left: 20px;	
+		position: relative;
+		&:before {
+			content: "•";
+			position: absolute;
+			left: -15px;
+			color: #f8ba53;
+		}
+	}
+}
+
 p {
-	line-height: 30px;
 	margin-bottom: 30px;
+	font-family: @mainFont;
+	line-height: 30px;
+	font-weight: 400;
+}
+
+.content-text-block {
+	margin-bottom: 90px;
+	img {
+		@media @mob-w {
+			margin-top: 30px;
+			float: none;
+		}
+		@media @tablet-w {
+			margin-top: 0;
+		}
+	}
+	*+img {
+		@media @tablet-w {
+				margin-top: 30px;
+		}
+	}
+}
+
+.align-right {
+	margin-left: auto;
+}
+
+.align-right {
+	margin-right: auto;
 }
 
 .about-company {
@@ -521,3 +618,7 @@ p {
 	color: #666666;
 	line-height: 30px;
 }
+
+
+/*______ COMPLEX PAGE ______*/
+

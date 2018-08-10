@@ -34,11 +34,21 @@
 		color: #989898;
 		font-size: 12px;
 		.font(400);
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	&__bottom {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		flex-wrap: wrap;
 	}
 	.tel {
 		margin-right: 20px;
 		display: inline-block;
 		vertical-align: middle;
+		font-style: normal;
 		a {
 			position: relative;
 			color: #000000;
@@ -48,6 +58,9 @@
 				margin-right: 15px;
 			}
 		}
+	}
+	&__timework {
+		float: right;
 	}
 	.btn {
 		height: 30px;

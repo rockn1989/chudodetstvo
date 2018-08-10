@@ -146,3 +146,50 @@ nav.nav {
 		}
 	}
 }
+
+.breadcrumbs-wrapper {
+	margin: 30px 0;
+	.breadcrumbs {
+		li,a {
+			color: #cccccc;
+		}
+	}
+}
+
+
+/*______ Quotes ______*/
+
+
+.quote {
+	padding: 30px;
+	color: #000000;
+	font-size: 14px;
+	line-height: 30px;
+	font-family: @mainFontItalic;
+	border: 2px solid #e6882e;
+	border-radius: 6px;
+	font-weight: bold;
+	&.border-left {
+		border: none;
+		border-left: 2px solid #e6882e;
+		border-radius: 0;
+	}
+	&.small-quote {
+		padding: 30px 50px;
+		padding-right: 0;
+		color: #666666;
+		font-weight: normal;
+		@media @mob-w {
+			width: 100%;
+		}
+		@media @tablet-w {
+			max-width: 85%;
+		}
+	}
+	p {
+		font-family: @mainFontItalic;
+	}
+	p:last-child {
+		margin-bottom: 0;
+	}
+}
