@@ -1,0 +1,30 @@
+{% extends "layouts/default.html" %}
+{% set title="Галлерея" %}
+{% set bread = ["Главная", "Галлерея"] %}
+{% block content %}
+
+<div class="breadcrumbs-wrapper">
+	<div class="uk-container">
+		{% include 'includes/breadcrumbs.html'%}
+	</div>
+</div>
+
+<div class="content">
+	<div class="uk-container">
+		<div class="title-h1">Галлерея</div>
+		<div class="small-title uk-text-center">Счастливые моменты, мы рады поделиться ими с Вами!</div>
+		<div class="gallery-wrapper">
+			{% for i in 1..4 %}<a href="img/gallery-big-img-{{i}}.jpg" data-uk-lightbox="{group: 'gallery'}">
+				<img src="img/gallery-small-img-{{i}}-150x150.jpg" alt="">
+			</a>
+			{% endfor %}
+
+			{% for i in 1..4 %}<a href="img/gallery-big-img-{{i}}.jpg" data-uk-lightbox="{group: 'gallery'}">
+				<img src="img/gallery-small-img-{{i}}-150x150.jpg" alt="">
+			</a>
+			{% endfor %}
+		
+		</div>
+	</div>
+</div>
+{% endblock %}

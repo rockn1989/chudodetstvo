@@ -1,0 +1,29 @@
+{% extends "layouts/default.html" %}
+{% set title="Летние каникулы с 9 июля по 12 августа" %}
+{% set bread = ["Главная", "Новости" ,"Летние каникулы с 9 июля по 12 августа"] %}
+{% block content %}
+
+<div class="breadcrumbs-wrapper">
+	<div class="uk-container">
+		{% include 'includes/breadcrumbs.html'%}
+	</div>
+</div>
+
+<div class="content">
+	<div class="uk-container">
+		<div class="news-detail__img">
+			<img src="img/news-detail-img.png" alt="">
+		</div>
+		<div class="title-h1">Летние каникулы с 9 июля по 12 августа</div>
+		<div class="news-detail__desc">
+			<p>
+				Друзья, лето это пора отдыха. Наш центр уходит на каникулы с 9 июля по 12 августа. Ждем вас в гости уже с 13 августа. В этот период занятия с детьми проводится не будут, но остаемся в вами на связи.
+			</p>
+			<p>
+				По вопросам о содержании курсов и приобретении абонементов на новый учебный год, звоните нам по телефону 8 (903) 796 74 79 или пишите в WhatsApp
+			</p>
+		</div>
+	</div>
+</div>
+
+{% endblock %}

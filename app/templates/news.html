@@ -1,0 +1,45 @@
+{% extends "layouts/default.html" %}
+{% set title="Новости" %}
+{% set bread = ["Главная", "Новости"] %}
+{% block content %}
+
+<div class="breadcrumbs-wrapper">
+	<div class="uk-container">
+		{% include 'includes/breadcrumbs.html'%}
+	</div>
+</div>
+
+<div class="content">
+	<div class="uk-container">
+		<div class="title-h1">Новости</div>
+
+		<!-- begin news-list-wrapper -->
+		<div class="news-list-wrapper">
+				<div class="news-list">
+					{% for i in 0..8 %}<div class="news-list__item">
+						<div class="news-list__img">
+							<img src="img/course-img-360x210.png" alt="">
+							<div class="news-list__date">
+								9 июля 2018
+							</div>
+						</div>
+						<div class="news-list__desc">
+							<div class="news-list__title">
+								Развивающие занятия для детей
+							</div>
+							<div class="news-list__shot-desc">
+								Друзья, лето это пора отдыха. Наш центр уходит на каникулы с 9 июля по 12 августа.
+							</div>
+						</div>
+						<a href="" class="news-btn">Подробнее</a>
+					</div>
+					{% endfor %}
+				</div>
+				<a href="" class="all-news icon-arrow-right">Еще новости</a>
+		</div>
+		<!-- end news-list-wrapper -->
+
+	</div>
+</div>
+
+{% endblock %}
